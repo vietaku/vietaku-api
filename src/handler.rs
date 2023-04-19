@@ -6,7 +6,7 @@ use crate::{
 use actix_web::{delete, get, patch, post, web, HttpResponse, Responder};
 use serde_json::json;
 
-#[get("/api/healthchecker")]
+#[get("/healthchecker")]
 async fn health_checker_handler() -> impl Responder {
   const MESSAGE: &str = "Build Simple CRUD API with Rust, SQLX, MySQL, and Actix Web";
 
